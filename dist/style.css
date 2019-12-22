@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap);
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative;
+  padding: 2.3% 6.8% 0% 6.8%;
+  margin: 0;
+  background-size: 100%;
+  background-color: rgba(174, 181, 185, 0.5);
+  color: white;
+  height: 90vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button,
+select {
+  /* border-radius: 5px; */
+  height: 35px;
+  background: rgba(174, 181, 185, 0.5);
+  /* border: 1px solid rgba(228, 227, 227, 0.2); */
+  /* margin-right: 5px; */
+  color: white;
+  size: 14px;
+  font-weight: bold;
+}
+
+.inputEnter{
+  margin-left: auto;
+}
+
+.button0 {
+  background: rgba(174, 181, 185, 0.5);
+  width: 35px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.button1 {
+  background: rgba(174, 181, 185, 0.5);
+  border-radius: 5px 0px 0px 5px;
+  width: 35px;
+}
+
+.button2 {
+  background: rgba(174, 181, 185, 0.5);
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 10px;
+  width: 35px;
+}
+
+
+.tagSelect {
+  width: 71px;
+  border-radius: 5px;
+}
+
+.inputEnter{
+  background: rgba(174, 181, 185, 0.5);
+  border-radius: 0px 5px 5px 0px;
+  margin-right: 10px;
+  width: 274px;
+  height: 29px;
+  text-transform: uppercase;
+}
+.divСoordinates{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.sectionTagOne {
+  position: absolute;
+  /* height: 69%; */
+  /* width: 45%; */
+  top: 20%;
+  left: 6.8%;
+}
+
+.overcast0,
+.overcast1,
+.overcast2,
+.overcast3 {
+  font-size: 15px;
+}
+
+.sectionTagTwo {
+  position: absolute;
+  top: 26.6%;
+  right: 6.8%;
+}
+
+.divNumberCommon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divNumber {
+  width: 350px;
+  font-size: 220px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.divDateToday{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.divDateCity{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.divWeather{
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.divDaysBlock {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+#TUESDAY,
+#WEDNESDAY,
+#THURSDAY {
+  display: grid;
+  grid-template-areas: "one one" "two third";
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.One {
+  grid-area: one;
+}
+
+.Two {
+  grid-area: two;
+}
+
+.Third {
+  grid-area: third;
+}
+
+p {
+  margin: 0;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+
+.overcast1,.overcast2,.overcast3
+{
+  font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  margin:15px 0;
+}
+
+.divNavigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.divMap {
+  height: 360px;
+  width: 360px;
+  border-radius: 25px;
+}
