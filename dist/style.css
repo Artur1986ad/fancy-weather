@@ -1,17 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap);
-* {
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap);* {
   margin: 0;
   padding: 0; }
 
 body {
   position: relative;
   padding: 2.3% 6.8% 0% 6.8%;
-  margin: 0;
-  background-size: 100%;
+  background-size: cover;
   background-color: rgba(174, 181, 185, 0.5);
   color: white;
-  height: 90vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  background: no-repeat; 
 }
 
 header {
@@ -20,42 +18,32 @@ header {
   align-items: center;
 }
 
+.sectionMain{
+  display: flex;
+  margin-top: 60px;
+}
+.go{
+  width:45px;
+}
+
+.sectionOne{
+  width: 50%;
+}
+
+.sectionTwo{
+  margin-left: auto;
+}
+
 button,
 select {
-  /* border-radius: 5px; */
   height: 35px;
+  width: 35px;
+  margin-right: 10px;
   background: rgba(174, 181, 185, 0.5);
-  /* border: 1px solid rgba(228, 227, 227, 0.2); */
-  /* margin-right: 5px; */
   color: white;
   size: 14px;
   font-weight: bold;
 }
-
-.inputEnter{
-  margin-left: auto;
-}
-
-.button0 {
-  background: rgba(174, 181, 185, 0.5);
-  width: 35px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.button1 {
-  background: rgba(174, 181, 185, 0.5);
-  border-radius: 5px 0px 0px 5px;
-  width: 35px;
-}
-
-.button2 {
-  background: rgba(174, 181, 185, 0.5);
-  border-radius: 0px 5px 5px 0px;
-  margin-right: 10px;
-  width: 35px;
-}
-
 
 .tagSelect {
   width: 71px;
@@ -63,6 +51,7 @@ select {
 }
 
 .inputEnter{
+  margin-left: auto;
   background: rgba(174, 181, 185, 0.5);
   border-radius: 0px 5px 5px 0px;
   margin-right: 10px;
@@ -71,7 +60,6 @@ select {
   text-transform: uppercase;
 }
 .divСoordinates{
-    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #fff;
@@ -80,17 +68,8 @@ select {
 
 .sectionTagOne {
   position: absolute;
-  /* height: 69%; */
-  /* width: 45%; */
   top: 20%;
   left: 6.8%;
-}
-
-.overcast0,
-.overcast1,
-.overcast2,
-.overcast3 {
-  font-size: 15px;
 }
 
 .sectionTagTwo {
@@ -107,37 +86,25 @@ select {
 .divNumber {
   width: 350px;
   font-size: 220px;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 
-.divDateToday{
-  font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-}
-.divDateCity{
-  font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 500;
-}
-
+.divDateToday,
+.divDateCity,
 .divWeather{
   font-size: 20px;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 
 .divDaysBlock {
   display: flex;
   justify-content: space-between;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 
-#TUESDAY,
-#WEDNESDAY,
-#THURSDAY {
+#dayOfWeekOne,
+#dayOfWeekTwo,
+#dayOfWeekThree {
   display: grid;
   grid-template-areas: "one one" "two third";
   font-size: 20px;
@@ -157,17 +124,9 @@ select {
   grid-area: third;
 }
 
-p {
-  margin: 0;
-  font-size: 70px;
-  font-weight: 900;
-}
-
-
 .overcast1,.overcast2,.overcast3
 {
   font-size: 24px;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
   margin:15px 0;
 }
@@ -181,6 +140,76 @@ p {
 
 .divMap {
   height: 360px;
-  width: 360px;
+  width: 500px;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 320px) {
+  .divNavigation {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+  }
+
+  button,
+  select {
+      height: 25px;
+      width: 25px;
+      margin-right: 2px;
+      size: 10px;
+  }
+
+.tagSelect {
+  width: 50px;
+  border-radius: 5px;
+}
+
+.inputEnter{
+  margin-right: 5px;
+  width: 130px;
+  height: 20px;
+}
+
+  .sectionMain {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+  }
+  .sectionOne {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  
+  .divDaysBlock,
+  .overcast0,
+  .overcast1,
+  .overcast2,
+  .overcast3 {
+      font-size: 15px;
+  }
+  .divСoordinates{
+    font-size: 15px;
+  }
+  .divNumber {
+      font-size: 50px;
+      margin: 0;
+      padding: 0;
+  }
+  #dayOfWeekOne,
+  #dayOfWeekTwo,
+  #dayOfWeekThree {
+    display: grid;
+    grid-template-areas: "one one" "two third";
+    font-size: 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+    img{
+    width: 80px;
+  }
+  .divMap {
+    height:250px;
+    width: 250px;
+  }
 }
